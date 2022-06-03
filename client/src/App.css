@@ -60,7 +60,7 @@ body {
 }
 .chat-window .chat-header {
   height: 45px;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   background: #263238;
   position: relative;
   cursor: pointer;
@@ -71,6 +71,12 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 45px;
+}
+
+.chat-window .chat-header .chat-sign {
+  height: 10px;
+  width: 10px;
+  background-color: #089151;
 }
 
 .chat-window .chat-body {

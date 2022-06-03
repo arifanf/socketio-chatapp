@@ -32,13 +32,15 @@ const Chat = ({ socket, username, room }) => {
   return (
     <div className="chat-window">
       <div className="chat-header">
+        <div className="chat-sign"></div>
         <p>Live Chat</p>
       </div>
       <div className="chat-body">
         <ScrollToBottom className="message-container">
-          {messageList.map((messageContent) => {
+          {messageList.map((messageContent, index) => {
             return (
               <div
+                key={index}
                 className="message"
                 id={username === messageContent.author ? "you" : "other"}
               >
